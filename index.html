@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Invader Game</title>
+    <link rel="icon" href="./img/spaceship-player.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="./img/spaceship-player.png" style="display: none;" id="player-image" alt="Player">
+    <div id="controls">
+        <input type="checkbox" id="mute-controls"><span>&nbsp;Mute&nbsp;</span>
+        <input type="checkbox" id="pause"><span>&nbsp;Pause&nbsp;</span>
+    </div>
+    <dialog id="intro">
+        <img src="./img/title-image.png" alt="SPACE INVADERS GAME"><br><br>
+        <div>
+            <p>Press<span class="keys"> &RightArrow; </span> to move Right</p><br>
+            <p>Press<span class="keys"> &LeftArrow; </span> to move Left</p><br>
+            <p>Press<span class="keys"> Space Bar </span> to Shoot </p><br><br>
+        </div>
+        <input type="radio" name="difficulty" id="easy" value="750">&nbsp;Easy&nbsp; 
+        <input type="radio" name="difficulty" id="medium" value="500" checked>&nbsp;Medium&nbsp;
+        <input type="radio" name="difficulty" id="difficult" value="100">&nbsp;Difficult&nbsp;
+        <br><br>
+        <button id="press-to-continue">press to continue</button>
+    </dialog>
+    <dialog id="game-over">
+        <h1 id="game-over-text">GAME OVER</h1>
+        <button id="restart">Restart</button>
+    </dialog>
+    <canvas id="canvas"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
