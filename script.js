@@ -574,9 +574,9 @@ function animate() {
     if(frames % randomInterval === 0) {
         grids.push(new Grid());
     }
-    if(frames % randomInterval2 === 100) {
-        immunityParticles.push(new ImmunityParticles())
-    }
+    // if(frames % randomInterval2 === 100) {
+    //     immunityParticles.push(new ImmunityParticles())
+    // }
     // if(frames % 10 === 0) {
     //     explosion++
     // }
